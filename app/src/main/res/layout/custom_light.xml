@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="@dimen/custom_light"
     android:layout_height="350dp"
-    android:background="@drawable/dialog_background_center"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    android:background="@drawable/custom_dialod_light">
 
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/loading"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,18 +15,18 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_close"
             android:layout_alignParentEnd="true"
             android:contentDescription="@string/close_image"
             android:padding="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_close"
             tools:ignore="RtlCompat" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_centerInParent="true"
             android:gravity="center"
-            android:layout_centerInParent="true">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -37,11 +36,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
                 android:text="@string/andreson_thomas"
                 android:textColor="@android:color/black"
                 android:textSize="17sp"
-                android:textStyle="bold"
-                android:layout_margin="@dimen/activity_horizontal_margin"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -52,10 +51,10 @@
             <Button
                 android:layout_width="120dp"
                 android:layout_height="40dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/red_error_button_background"
                 android:text="@string/follow"
-                android:textColor="@android:color/white"
-                android:background="@drawable/bg_btn"
-                android:layout_margin="@dimen/activity_horizontal_margin"/>
+                android:textColor="@android:color/white" />
 
 
             <LinearLayout
@@ -74,8 +73,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/_35_7k"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold"
-                        android:textSize="17sp"/>
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -86,9 +85,9 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
                     android:layout_marginStart="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
                     tools:ignore="RtlCompat">
 
                     <TextView
@@ -96,8 +95,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/_215"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold"
                         android:textSize="17sp"
+                        android:textStyle="bold"
                         />
 
                     <TextView
